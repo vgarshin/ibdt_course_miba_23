@@ -29,32 +29,32 @@ After the course the students will have knowledge and skills of:
     4. Solving scaling issues, new tools for big data
 
 2. NoSQL databases:
-2.1. Way to solve scalability and availability problems
-2.2. BASE vs ACID
-2.3. NoSQL databases (document-oriented, key-value, graph, column-based)
-2.4. Advantages and disadvantages of NoSQL
-2.5. Popular NoSQL frameworks and cases of their application
+    1. Way to solve scalability and availability problems
+    2. BASE vs ACID
+    3. NoSQL databases (document-oriented, key-value, graph, column-based)
+    4. Advantages and disadvantages of NoSQL
+    5. Popular NoSQL frameworks and cases of their application
 
 3. Hadoop ecosystem:
-3.1. Apache Hadoop, architecture principles, HDFS file system
-3.2. MapReduce concept, implementation in Hadoop
-3.3. From Hadoop 1 to Hadoop 2: move to YARN
-3.4. Advantages and disadvantages of MapReduce, from MapReduce to alternative engines (Spark)
+    1. Apache Hadoop, architecture principles, HDFS file system
+    2. MapReduce concept, implementation in Hadoop
+    3. From Hadoop 1 to Hadoop 2: move to YARN
+    4. Advantages and disadvantages of MapReduce, from MapReduce to alternative engines (Spark)
 
 4. Modern Hadoop:
-4.1. Spark engine as an alternative to MapReduce, weaknesses of MapReduce and power of Spark
-4.2. SQL in Hadoop: Hive, Impala
-4.3. NoSQL in Hadoop: HBase
-4.4. Next steps for Big Data framework (S3)
+    1. Spark engine as an alternative to MapReduce, weaknesses of MapReduce and power of Spark
+    2. SQL in Hadoop: Hive, Impala
+    3. NoSQL in Hadoop: HBase
+    4. Next steps for Big Data framework (S3)
 
 5. Data lake concept and tools:
-5.1. Data loading, batch vs streaming
-5.2. File storage, Data formats: parquet, ORG, thrift, avro, json, csv
-5.3. Processing, scheduling and management tools
-5.4. Analytics and delivery, BI
-5.5. Security, authentication and authorization, audit
+    1. Data loading, batch vs streaming
+    2. File storage, Data formats: parquet, ORG, thrift, avro, json, csv
+    3. Processing, scheduling and management tools
+    4. Analytics and delivery, BI
+    5. Security, authentication and authorization, audit
 
 6. Overview of the modern market and ways of its development:
-6.1. Cloud platforms and modern solutions to work with data, Bare-metal vs Clouds for Big Data solutions
-6.2. The largest providers on the Russian and international market
-6.3. Problems and the future development
+    1. Cloud platforms and modern solutions to work with data, Bare-metal vs Clouds for Big Data solutions
+    2. The largest providers on the Russian and international market
+    3. Problems and the future development

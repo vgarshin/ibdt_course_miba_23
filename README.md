@@ -23,10 +23,10 @@ After the course the students will have knowledge and skills of:
 ## Structure and content
 
 1. Evolution of data and tools for their storage and processing:
-  1. From data to big data, what is big data
-  2. Development of tools for working with data – databases, the basics of relational databases
-  3. Limitations of the "classical" approach and relational databases
-  4. Solving scaling issues, new tools for big data
+    1. From data to big data, what is big data
+    2. Development of tools for working with data – databases, the basics of relational databases
+    3. Limitations of the "classical" approach and relational databases
+    4. Solving scaling issues, new tools for big data
 
 2. NoSQL databases:
 2.1. Way to solve scalability and availability problems

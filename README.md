@@ -11,7 +11,7 @@ During the course students will learn:
 
 ## Prerequisites 
 
-Development Essentials, Machine Learning and Big Data Analysis (not necessary, buy would be a plus)
+Development Essentials, Machine Learning and Big Data Analysis (not necessary, but would be a plus)
 
 ## Learning outcomes
 

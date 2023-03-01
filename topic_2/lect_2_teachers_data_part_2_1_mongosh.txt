@@ -1,0 +1,26 @@
+Welcome to MongoDB Shell
+
+
+Study the manual https://www.mongodb.com/products/shell and welcome to Unix terminal:
+
+$ mongosh
+
+> show dbs
+> use firstdb
+> show tables
+> snippet install mongocompat
+> var file = cat('/home/jovyan/__DATA/IBDT_Spring_2023/topic_2/teachers-20230203.json');
+> var data = JSON.parse(file);
+> db.teachers.insert(data)
+> show tables
+> db.teachers.findOne()
+> db.teachers.find({"Id":  1891})
+
+
+We can create script with JavaScript and run it with mongosh:
+
+> load('/home/jovyan/ibdt_course_miba_23/topic_2/lect_2_vk_data_part_2_create.js')
+
+...or through Unix terminal:
+
+$ mongosh --file lect_2_vk_data_part_2_3_createsh.js

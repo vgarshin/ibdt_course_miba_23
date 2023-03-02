@@ -19,8 +19,8 @@ $ mongosh
 
 We can create script with JavaScript and run it with mongosh:
 
-> load('/home/jovyan/ibdt_course_miba_23/topic_2/lect_2_vk_data_part_2_create.js')
+> load('/home/jovyan/ibdt_course_miba_23/topic_2/lect_2_teachers_data_part_2_2_create.js')
 
 ...or through Unix terminal:
 
-$ mongosh --file lect_2_vk_data_part_2_3_createsh.js
+$ mongosh --file lect_2_teachers_data_part_2_3_createsh.js

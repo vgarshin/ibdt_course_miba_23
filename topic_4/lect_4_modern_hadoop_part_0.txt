@@ -1,0 +1,40 @@
+Welcome to Apache HBase!
+
+
+(A) Very basic example (based on manual https://hbase.apache.org/book.html)
+
+$ hbase shell
+
+hbase> create 'test', 'cf'
+hbase> list 'test'
+hbase> describe 'test'
+hbase> put 'test', 'row1', 'cf:a', 'value1'
+hbase> scan 'test'
+hbase> get 'test', 'row1'
+
+We can work with data, but some libraries are needed. 
+Hint: https://sparkbyexamples.com/hbase/hbase-table-filtering-data-like-where-clause/
+
+hbase> import org.apache.hadoop.hbase.filter.SingleColumnValueFilter 
+hbase> import org.apache.hadoop.hbase.filter.CompareFilter
+hbase> import org.apache.hadoop.hbase.filter.BinaryComparator
+hbase> scan 'test', { FILTER => SingleColumnValueFilter.new(Bytes.toBytes('cf'), Bytes.toBytes('a'), CompareFilter::CompareOp.valueOf('EQUAL'),BinaryComparator.new(Bytes.toBytes('value1')))}
+
+
+(B) Example for topic `Modern Hadoop: lab on HBase` with file `dim_geo.csv`
+
+hbase> create 'geo', 'city', 'provcode', 'provname', 'regcode', 'regname', 'postcode', 'salekey', 'ip'
+hbase> list 'geo'
+hbase> describe 'geo'
+hbase> scan 'geo'
+
+$ hbase org.apache.hadoop.hbase.mapreduce.ImportTsv \
+    -Dimporttsv.separator=',' \
+    -Dimporttsv.columns=HBASE_ROW_KEY,city,provcode,provname,regcode,regname,postcode,salekey,ip \
+    geo1 ~/__DATA/IBDT_Spring_2023/topic_4/dim_geo.csv
+
+hbase> get 'geo', '9'
+hbase> import org.apache.hadoop.hbase.filter.SingleColumnValueFilter 
+hbase> import org.apache.hadoop.hbase.filter.CompareFilter
+hbase> import org.apache.hadoop.hbase.filter.BinaryComparator
+hbase> scan 'geo', { FILTER => SingleColumnValueFilter.new(Bytes.toBytes('city'), Bytes.toBytes(''), CompareFilter::CompareOp.valueOf('EQUAL'),BinaryComparator.new(Bytes.toBytes('Weston')))}

@@ -36,7 +36,7 @@ class FindMax(MRJob):
         )
         # yield the column needed
         try:
-            yield TOP_COL, (float(row[TOP_COL][1:]), line.split(',')[0])
+            yield TOP_COL, (float(row[TOP_COL]), line.split(',')[0])
         except ValueError:
             self.increment_counter('warn', 'missing gross', 1)
 

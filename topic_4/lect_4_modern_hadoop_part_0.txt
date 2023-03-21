@@ -31,7 +31,7 @@ hbase> scan 'geo'
 $ hbase org.apache.hadoop.hbase.mapreduce.ImportTsv \
     -Dimporttsv.separator=',' \
     -Dimporttsv.columns=HBASE_ROW_KEY,city,provcode,provname,regcode,regname,postcode,salekey,ip \
-    geo1 ~/__DATA/IBDT_Spring_2023/topic_4/dim_geo.csv
+    geo ~/__DATA/IBDT_Spring_2023/topic_4/dim_geo.csv
 
 hbase> get 'geo', '9'
 hbase> import org.apache.hadoop.hbase.filter.SingleColumnValueFilter 
